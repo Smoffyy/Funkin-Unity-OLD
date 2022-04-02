@@ -32,9 +32,10 @@ public class Note : MonoBehaviour
         }
     }
     void OnTriggerExit2D(Collider2D other) {
-        if(other.tag == "Active") {
+        if (gameObject.activeSelf) {
             canBePressed = false;
             PlayState.instance.daNoteMiss();
         }
+        
     }
 }
