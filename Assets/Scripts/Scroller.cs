@@ -7,7 +7,7 @@ public class Scroller : MonoBehaviour
     public float BPM;
 
     void Start() {
-        BPM = BPM / 60f;
+        BPM = BPM / 10f;
     }
     
     void Update() {
