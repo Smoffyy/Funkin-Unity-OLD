@@ -7,10 +7,11 @@ public class Controller : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite defaultSprite;
     public Sprite pressedSprite;
-    //public sprite hitSprite;
+    public AnimationClip hitSprite;
 
     public KeyCode keyBind;
     public KeyCode altKeyBind;
+    public Animator animator;
     
     void Start()
     {
