@@ -20,9 +20,9 @@ public class PlayState : MonoBehaviour
     } 
 
     public void daNoteHit() {
-        Debug.Log("Note Hit");
+        //Debug.Log("Note Hit");
     }
     public void daNoteMiss() {
-        Debug.Log("Note Miss");
+        //Debug.Log("Note Miss");
     }
 }
