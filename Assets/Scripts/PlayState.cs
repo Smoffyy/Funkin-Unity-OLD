@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class PlayState : MonoBehaviour
 {
     public AudioSource Instrumental;
     public AudioSource Vocals;
     public Scroller BPM;
-    public static Manager instance;
+    public static PlayState instance;
     
     void Start() {
+        instance = this; 
         Instrumental.Play();
-        Vocals.Play();
-        instance = this;     
+        Vocals.Play();    
     }
         
     void Update() {
@@ -20,9 +20,9 @@ public class Manager : MonoBehaviour
     } 
 
     public void daNoteHit() {
-        
+        Debug.Log("Note Hit");
     }
     public void daNoteMiss() {
-        
+        Debug.Log("Note Miss");
     }
 }
