@@ -14,25 +14,25 @@ public class Controller : MonoBehaviour
     
     void Start()
     {
-        spriteRenderer = GetComponent<spriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     
     void Update()
     {   // Keybind
         if(Input.GetKeyDown(keyBind)) {
-            spriteRenderer = pressedSprite;
+            spriteRenderer.sprite = pressedSprite;
         }
         if(Input.GetKeyUp(keyBind)) {
-            spriteRenderer = defaultSprite;
+            spriteRenderer.sprite = defaultSprite;
         }
 
         // Alt Keybind
         if(Input.GetKeyDown(altKeyBind)) {
-            spriteRenderer = pressedSprite;
+            spriteRenderer.sprite = pressedSprite;
         }
         if(Input.GetKeyUp(altKeyBind)) {
-            spriteRenderer = defaultSprite;
+            spriteRenderer.sprite = defaultSprite;
         }
         
     }
