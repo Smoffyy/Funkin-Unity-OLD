@@ -677,6 +677,7 @@ GameObject:
   - component: {fileID: 73579509}
   - component: {fileID: 73579508}
   - component: {fileID: 73579507}
+  - component: {fileID: 73579510}
   m_Layer: 0
   m_Name: Up Arrow
   m_TagString: ActiveOp
@@ -817,6 +818,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &73579510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73579505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ff9cbbcd55b46ac25fa5f87469ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 5db67cb9481b9a3489a8e4f74ba1fc70, type: 3}
+  daNoteHit: 0
 --- !u!1 &139085129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2606,7 @@ GameObject:
   - component: {fileID: 689426143}
   - component: {fileID: 689426142}
   - component: {fileID: 689426141}
+  - component: {fileID: 689426144}
   m_Layer: 0
   m_Name: Left Arrow
   m_TagString: ActiveOp
@@ -2730,6 +2747,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &689426144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689426139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ff9cbbcd55b46ac25fa5f87469ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSprite: {fileID: 21300000, guid: 33856ed7673a1f84daad50550a9fe6b8, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 0a92e5a45750d89478a6e1950f26f50a, type: 3}
+  daNoteHit: 0
 --- !u!1 &760421404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +3499,7 @@ GameObject:
   - component: {fileID: 856693529}
   - component: {fileID: 856693528}
   - component: {fileID: 856693527}
+  - component: {fileID: 856693530}
   m_Layer: 0
   m_Name: Right Arrow
   m_TagString: ActiveOp
@@ -3607,6 +3640,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &856693530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856693525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ff9cbbcd55b46ac25fa5f87469ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: d5aa3c3a27ebb8443be301e5019d3803, type: 3}
+  daNoteHit: 0
 --- !u!1 &887000986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,6 +4911,7 @@ GameObject:
   - component: {fileID: 1094433856}
   - component: {fileID: 1094433855}
   - component: {fileID: 1094433854}
+  - component: {fileID: 1094433857}
   m_Layer: 0
   m_Name: Down Arrow
   m_TagString: ActiveOp
@@ -5003,6 +5052,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1094433857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094433852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ff9cbbcd55b46ac25fa5f87469ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSprite: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 16fd16e9586a37e44a5770f0a38e3928, type: 3}
+  daNoteHit: 0
 --- !u!1 &1117262703
 GameObject:
   m_ObjectHideFlags: 0
