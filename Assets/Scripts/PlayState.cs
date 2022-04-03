@@ -7,6 +7,7 @@ public class PlayState : MonoBehaviour
     public AudioSource Instrumental;
     public AudioSource Vocals;
     public Scroller BPM;
+    public Scroller BPM_Opponent;
     public static PlayState instance;
     
     void Start() {
