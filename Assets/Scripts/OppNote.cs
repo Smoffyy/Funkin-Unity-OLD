@@ -17,15 +17,14 @@ public class OppNote : MonoBehaviour
         if(other.tag == "ActiveOp") {
             canBePressed = true;
             gameObject.SetActive(false);
-            PlayState.instance.daNoteHit();
+            GameState.instance.daNoteHit();
             
         }
     }
     void OnTriggerExit2D(Collider2D other) {
         if (gameObject.activeSelf) {
             canBePressed = false;
-            gameObject.SetActive(false);
-            PlayState.instance.daNoteHit();
+            GameState.instance.daNoteHit();
             
         }
     }

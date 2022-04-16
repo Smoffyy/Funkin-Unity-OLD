@@ -4,36 +4,35 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
-    public Sprite defaultSprite;
-    public Sprite pressedSprite;
-    public AnimationClip hitSprite;
+
+    public AnimationClip pressedAnimation;
 
     public KeyCode keyBind;
     public KeyCode altKeyBind;
-    public Animator animator;
+    private Animator animator;
+    // Play the pressed animation when the key is pressed
     
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     
     void Update()
     {   // Keybind
         if(Input.GetKeyDown(keyBind)) {
-            spriteRenderer.sprite = pressedSprite;
+            animator.Play("pressedAnimation");
         }
         if(Input.GetKeyUp(keyBind)) {
-            spriteRenderer.sprite = defaultSprite;
+
         }
 
         // Alt Keybind
         if(Input.GetKeyDown(altKeyBind)) {
-            spriteRenderer.sprite = pressedSprite;
+
         }
         if(Input.GetKeyUp(altKeyBind)) {
-            spriteRenderer.sprite = defaultSprite;
+
         }
         
     }
