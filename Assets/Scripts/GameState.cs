@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayState : MonoBehaviour
+public class GameState : MonoBehaviour
 {
     public AudioSource Instrumental;
     public AudioSource Vocals;
     public Scroller BPM;
     public Scroller BPM_Opponent;
-    public static PlayState instance;
+    public static GameState instance;
     
     void Start() {
         instance = this; 

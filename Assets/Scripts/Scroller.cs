@@ -10,7 +10,8 @@ public class Scroller : MonoBehaviour
         BPM = BPM / 10f;
     }
     
-    void Update() {
-        transform.position -= new Vector3(0f, -BPM * Time.deltaTime, 0f);
+    void Update() { 
+        // If you want down scroll, use positive values
+        transform.position -= new Vector3(0f, BPM * Time.deltaTime, 0f);
     }   
 }

@@ -15,14 +15,14 @@ public class Note : MonoBehaviour
         if(Input.GetKeyDown(keyToPress)) {
             if(canBePressed) {
                 gameObject.SetActive(false);
-                PlayState.instance.daNoteHit();
+                GameState.instance.daNoteHit();
             }
         }
              // Alt Keybind
             if(Input.GetKeyDown(altKeyToPress)) {
             if(canBePressed) {   
                 gameObject.SetActive(false);
-                PlayState.instance.daNoteHit();
+                GameState.instance.daNoteHit();
             }
         }
     }    
@@ -34,7 +34,8 @@ public class Note : MonoBehaviour
     void OnTriggerExit2D(Collider2D other) {
         if (gameObject.activeSelf) {
             canBePressed = false;
-            PlayState.instance.daNoteMiss();
+            gameObject.SetActive(false);
+            GameState.instance.daNoteMiss();
         }
         
     }
