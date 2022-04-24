@@ -12,6 +12,6 @@ public class Scroller : MonoBehaviour
     
     void Update() { 
         // If you want down scroll, use positive values
-        transform.position -= new Vector3(0f, BPM * Time.deltaTime, 0f);
+        transform.position -= new Vector3(0f, -BPM * Time.deltaTime, 0f);
     }   
 }
