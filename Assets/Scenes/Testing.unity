@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c142dc72f419d045a337acb9878f5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 120
+  BPM: 200
 --- !u!4 &49343072
 Transform:
   m_ObjectHideFlags: 0
@@ -7113,7 +7113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c142dc72f419d045a337acb9878f5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 120
+  BPM: 200
 --- !u!1 &183216875
 GameObject:
   m_ObjectHideFlags: 0
@@ -31255,7 +31255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c142dc72f419d045a337acb9878f5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 120
+  BPM: 200
 --- !u!1 &807320382
 GameObject:
   m_ObjectHideFlags: 0
@@ -71237,7 +71237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -149}
+  m_AnchoredPosition: {x: -632, y: 322}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1918810693
@@ -74537,7 +74537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c142dc72f419d045a337acb9878f5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 120
+  BPM: 200
 --- !u!4 &1990651574
 Transform:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class Controller : MonoBehaviour
     public Sprite pressedSprite;
     public KeyCode keyBind;
     public KeyCode altKeyBind;
+    public Sprite hitSprite;
+    public static GameState instance;
     
     void Start()
     {
@@ -31,7 +33,6 @@ public class Controller : MonoBehaviour
         }
         if(Input.GetKeyUp(altKeyBind)) {
             spriteRenderer.sprite = defaultSprite;
-        }
-        
+        }      
     }
 }

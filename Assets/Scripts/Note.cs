@@ -7,6 +7,7 @@ public class Note : MonoBehaviour
     public bool canBePressed;
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
+    public static Note instance;
 
     void Start() {
 
@@ -20,12 +21,12 @@ public class Note : MonoBehaviour
         }
              // Alt Keybind
             if(Input.GetKeyDown(altKeyToPress)) {
-            if(canBePressed) {   
+                if(canBePressed) {   
                 gameObject.SetActive(false);
                 GameState.instance.daNoteHit();
             }
         }
-    }    
+    }
     void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Active") {
             canBePressed = true;

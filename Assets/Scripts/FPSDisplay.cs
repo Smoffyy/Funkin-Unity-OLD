@@ -5,7 +5,7 @@ using TMPro;
 
 public class FPSDisplay : MonoBehaviour {
     public TextMeshProUGUI FpsText;
-    private float frequency = 0.25f;
+    private float frequency = 1f;
     private float time;
     private int frameCount;
 
