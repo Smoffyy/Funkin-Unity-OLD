@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Controller : MonoBehaviour
@@ -9,8 +7,6 @@ public class Controller : MonoBehaviour
     public Sprite pressedSprite;
     public KeyCode keyBind;
     public KeyCode altKeyBind;
-    public Sprite hitSprite;
-    public static GameState instance;
 
     void Start()
     {

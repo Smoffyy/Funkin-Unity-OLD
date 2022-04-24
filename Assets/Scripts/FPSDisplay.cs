@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class FPSDisplay : MonoBehaviour
 {
     public TextMeshProUGUI FpsText;
-    private float frequency = 1f;
+    private float frequency = 0.5f;
     private float time;
     private int frameCount;
 
