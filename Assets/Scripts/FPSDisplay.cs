@@ -1,3 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
 public class FPSDisplay : MonoBehaviour
 {
     public TextMeshProUGUI FpsText;
