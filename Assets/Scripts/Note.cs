@@ -30,6 +30,7 @@ public class Note : MonoBehaviour
                 GameState.instance.daNoteHit();
             }
         }
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {
