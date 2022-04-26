@@ -9,31 +9,25 @@ public class Controller : MonoBehaviour
     public KeyCode altKeyBind;
     public static Controller instance;
 
-    void Start()
-    {
+    void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         instance = this;
     }
 
 
-    void Update()
-    {   // Keybind
-        if (Input.GetKeyDown(keyBind))
-        {
+    void Update() {
+        // Keybind
+        if (Input.GetKeyDown(keyBind)) {
             spriteRenderer.sprite = pressedSprite;
         }
-        if (Input.GetKeyUp(keyBind))
-        {
+        if (Input.GetKeyUp(keyBind)) {
             spriteRenderer.sprite = defaultSprite;
         }
-
         // Alt Keybind
-        if (Input.GetKeyDown(altKeyBind))
-        {
+        if (Input.GetKeyDown(altKeyBind)) {
             spriteRenderer.sprite = pressedSprite;
         }
-        if (Input.GetKeyUp(altKeyBind))
-        {
+        if (Input.GetKeyUp(altKeyBind)) {
             spriteRenderer.sprite = defaultSprite;
         }
     }
