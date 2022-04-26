@@ -7,10 +7,12 @@ public class Controller : MonoBehaviour
     public Sprite pressedSprite;
     public KeyCode keyBind;
     public KeyCode altKeyBind;
+    public static Controller instance;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        instance = this;
     }
 
 

@@ -1,11 +1,12 @@
+using System.Reflection.Metadata;
 using UnityEngine;
 
 public class Note : MonoBehaviour
 {
     public bool canBePressed;
-    public KeyCode keyToPress;
-    public KeyCode altKeyToPress;
     public static Note instance;
+    public KeyCode keyBind;
+    public KeyCode altKeyBind;
 
     void Start()
     {
@@ -13,7 +14,7 @@ public class Note : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyBind))
         {
             if (canBePressed)
             {
@@ -22,7 +23,7 @@ public class Note : MonoBehaviour
             }
         }
         // Alt Keybind
-        if (Input.GetKeyDown(altKeyToPress))
+        if (Input.GetKeyDown(altKeyBind))
         {
             if (canBePressed)
             {
@@ -47,6 +48,5 @@ public class Note : MonoBehaviour
             gameObject.SetActive(false);
             GameState.instance.daNoteMiss();
         }
-
     }
 }
