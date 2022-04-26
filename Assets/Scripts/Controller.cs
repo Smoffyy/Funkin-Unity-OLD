@@ -14,7 +14,6 @@ public class Controller : MonoBehaviour
         instance = this;
     }
 
-
     void Update() {
         // Keybind
         if (Input.GetKeyDown(keyBind)) {

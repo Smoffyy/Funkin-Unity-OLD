@@ -2,34 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Note : MonoBehaviour {
-
+public class Note : MonoBehaviour
+{
     public bool canBePressed;
-    public static Note instance;
-    public KeyCode keyBind;
-    public KeyCode altKeyBind;
+    public KeyCode keyToPress;
+    public KeyCode altKeyToPress;
 
     void Start() {
 
     }
-    void Update()
-    {
-        if (Input.GetKeyDown(keyBind)) {
-            if (canBePressed) {
+    void Update() {
+        if(Input.GetKeyDown(keyToPress)) {
+            if(canBePressed) {
                 gameObject.SetActive(false);
                 GameState.instance.daNoteHit();
             }
         }
-        // Alt Keybind
-        if (Input.GetKeyDown(altKeyBind)) {
-            if (canBePressed) {
+             // Alt Keybind
+            if(Input.GetKeyDown(altKeyToPress)) {
+            if(canBePressed) {   
                 gameObject.SetActive(false);
                 GameState.instance.daNoteHit();
             }
         }
-    }
+    }    
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Active") {
+        if(other.tag == "Active") {
             canBePressed = true;
         }
     }
@@ -39,5 +37,6 @@ public class Note : MonoBehaviour {
             gameObject.SetActive(false);
             GameState.instance.daNoteMiss();
         }
+        
     }
 }
