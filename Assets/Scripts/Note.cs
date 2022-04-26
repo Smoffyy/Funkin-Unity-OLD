@@ -22,7 +22,7 @@ public class Note : MonoBehaviour
             if(Input.GetKeyDown(altKeyToPress)) {
             if(canBePressed) {   
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                GameState.instance.daNoteMiss();
             }
         }
     }    
