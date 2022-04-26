@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
-    public float scrollSpeed;
-    public float BPM;
+    public float scrollSpeed = 5f;
+    public float BPM = 100f;
 
     void Start() {
-        BPM = BPM / 10f;
-        scrollSpeed = scrollSpeed / 1f;
+
     }
 
     void Update() {
