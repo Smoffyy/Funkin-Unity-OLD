@@ -1,9 +1,9 @@
-/*
+
 using UnityEngine;
 
-public class OppControl : MonoBehaviour {
-
-    [SerializeField] private Animator anim;
+public class OppControl : MonoBehaviour 
+{
+   private Animator anim;
 
     void Start() {
     
@@ -13,13 +13,8 @@ public class OppControl : MonoBehaviour {
     
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Left"))
-        anim.SetBool("Confirm", true);
+    private void OnCollisionEnter2D(Collision2D other) {
+        
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
-        if(other.CompareTag("Left"))
-        anim.SetBool("Confirm", false);
-    }
-*/
+}
