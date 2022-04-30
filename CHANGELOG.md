@@ -1,3 +1,6 @@
+# 4.30.22
+- Updated to 2022.2.0a11
+
 ## 4.25.22
 - Added held notes
 - Spammed lmao
