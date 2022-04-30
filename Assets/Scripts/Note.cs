@@ -24,13 +24,14 @@ public class Note : MonoBehaviour
             if(Input.GetKeyDown(altKeyToPress)) {
             if(canBePressed) {   
                 gameObject.SetActive(false);
-                GameState.instance.daNoteMiss();
+                GameState.instance.daNoteHit();
             }
         }  
              // Autoplay
         if (Input.GetKey("1")) {
                  if(canBePressed) {
                 gameObject.SetActive(false);
+                GameState.instance.daNoteHit();
             }
         }
     }    

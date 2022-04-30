@@ -19,7 +19,6 @@ public class OppNote : MonoBehaviour
         {
             canBePressed = true;
             gameObject.SetActive(false);
-            GameState.instance.daNoteHit();
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -27,8 +26,6 @@ public class OppNote : MonoBehaviour
         if (gameObject.activeSelf)
         {
             canBePressed = false;
-            GameState.instance.daNoteHit();
-
         }
     }
 }
