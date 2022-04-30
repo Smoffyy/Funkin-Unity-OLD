@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 
 public class HeldNote : MonoBehaviour
@@ -22,6 +23,12 @@ public class HeldNote : MonoBehaviour
             if (canBePressed) {
                 gameObject.SetActive(false);
                 GameState.instance.daNoteHit();
+            }
+        }
+            //Autoplay
+        if (Input.GetKey("1")) {
+                 if(canBePressed) {
+                gameObject.SetActive(false);
             }
         }
     }

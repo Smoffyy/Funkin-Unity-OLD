@@ -7,6 +7,7 @@ public class Note : MonoBehaviour
     public bool canBePressed;
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
+    
 
     void Start() {
 
@@ -23,6 +24,12 @@ public class Note : MonoBehaviour
             if(canBePressed) {   
                 gameObject.SetActive(false);
                 GameState.instance.daNoteMiss();
+            }
+        }  
+             // Autoplay
+        if (Input.GetKey("1")) {
+                 if(canBePressed) {
+                gameObject.SetActive(false);
             }
         }
     }    
