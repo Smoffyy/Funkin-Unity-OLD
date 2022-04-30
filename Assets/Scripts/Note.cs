@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
     public bool canBePressed;
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
     
 
     void Start() {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update() {
         if(Input.GetKeyDown(keyToPress)) {
@@ -44,6 +45,5 @@ public class Note : MonoBehaviour
             gameObject.SetActive(false);
             GameState.instance.daNoteMiss();
         }
-        
     }
 }
