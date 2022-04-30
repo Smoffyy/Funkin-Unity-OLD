@@ -6,20 +6,24 @@ public class GameState : MonoBehaviour
     //public AudioSource Vocals;
     public static GameState instance;
 
-    void Start() {
+    void Start()
+    {
         instance = this;
         //Instrumental.Play();
         //Vocals.Play();
     }
 
-    void Update() {
-        
+    void Update()
+    {
+
     }
 
-    public void daNoteHit() {
-        
+    public void daNoteHit()
+    {
+       
     }
-    public void daNoteMiss() {
+    public void daNoteMiss()
+    {
 
     }
 }

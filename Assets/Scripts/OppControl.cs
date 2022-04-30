@@ -1,20 +1,23 @@
 
 using UnityEngine;
 
-public class OppControl : MonoBehaviour 
+public class OppControl : MonoBehaviour
 {
-   private Animator anim;
+    private Animator anim;
 
-    void Start() {
-    
+    void Start()
+    {
+
     }
 
-    void Update() {
-    
+    void Update()
+    {
+
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
     }
 
 }
