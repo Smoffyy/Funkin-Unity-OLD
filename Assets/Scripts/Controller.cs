@@ -37,4 +37,30 @@ public class Controller : MonoBehaviour
             spriteRenderer.sprite = defaultSprite;
         }
     }
+
+    public void daNoteHit()
+    {
+        if (!Input.GetKeyDown(keyBind))
+        {
+              spriteRenderer.sprite = hitSprite;
+        }
+
+        if (!Input.GetKeyDown(altKeyBind))
+        {
+              spriteRenderer.sprite = hitSprite;
+        }
+
+        if (!Input.GetKey("1"))
+        {
+            spriteRenderer.sprite = hitSprite;
+        } else
+        {
+            spriteRenderer.sprite = defaultSprite;
+        }
+    }
+    public void daNoteMiss()
+    {
+        spriteRenderer.sprite = defaultSprite;
+    }
 }
+

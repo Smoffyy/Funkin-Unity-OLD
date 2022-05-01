@@ -7,7 +7,6 @@ public class Note : MonoBehaviour
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
 
-
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -19,7 +18,7 @@ public class Note : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                Controller.instance.daNoteHit();
             }
         }
         // Alt Keybind
@@ -28,7 +27,7 @@ public class Note : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                Controller.instance.daNoteHit();
             }
         }
         // Autoplay
@@ -37,7 +36,7 @@ public class Note : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                Controller.instance.daNoteHit();
             }
         }
     }
@@ -54,7 +53,7 @@ public class Note : MonoBehaviour
         {
             canBePressed = false;
             gameObject.SetActive(false);
-            GameState.instance.daNoteMiss();
+            Controller.instance.daNoteMiss();
         }
     }
 }

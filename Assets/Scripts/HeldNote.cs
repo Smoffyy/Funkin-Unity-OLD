@@ -18,7 +18,7 @@ public class HeldNote : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                Controller.instance.daNoteHit();
             }
         }
         // Alt Keybind
@@ -27,7 +27,7 @@ public class HeldNote : MonoBehaviour
             if (canBePressed)
             {
                 gameObject.SetActive(false);
-                GameState.instance.daNoteHit();
+                Controller.instance.daNoteHit();
             }
         }
         //Autoplay
@@ -52,7 +52,7 @@ public class HeldNote : MonoBehaviour
         {
             canBePressed = false;
             gameObject.SetActive(false);
-            GameState.instance.daNoteMiss();
+            Controller.instance.daNoteMiss();
         }
     }
 }
