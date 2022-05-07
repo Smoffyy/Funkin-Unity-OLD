@@ -4,7 +4,7 @@ using UnityEngine;
 public class FPSDisplay : MonoBehaviour
 {
     public TextMeshProUGUI FpsText;
-    private float frequency = 0.25f;
+    private float frequency = 0.5f;
     private float time;
     private int frameCount;
 

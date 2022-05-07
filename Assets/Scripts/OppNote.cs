@@ -4,6 +4,7 @@ public class OppNote : MonoBehaviour
 {
     public bool canBePressed;
     //public static OppNote instance;
+    
 
     void Start()
     {

@@ -1,5 +1,5 @@
 # 4.30.22
-- Updated to 2022.2.0a11
+- Updated to Unity-2022.2.0a11
 
 ## 4.25.22
 - Added held notes
@@ -12,7 +12,7 @@
 - Changed all colliders to box colliders
 
 ## 4.15.22
-- Updated to Unity 2022.2.0a10
+- Updated to Unity-2022.2.0a10
 - Messed around with some stuff
 - Synced up vocals and instrumental
 - Spammed notes, lmao
