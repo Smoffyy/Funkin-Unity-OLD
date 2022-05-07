@@ -39,7 +39,7 @@ public class Controller : MonoBehaviour
     }
 
     public void daNoteHit()
-    {
+    {   /*
         if (!Input.GetKeyDown(keyBind))
         {
               spriteRenderer.sprite = hitSprite;
@@ -57,6 +57,7 @@ public class Controller : MonoBehaviour
         {
             spriteRenderer.sprite = defaultSprite;
         }
+        */
     }
     public void daNoteMiss()
     {
