@@ -1,3 +1,6 @@
+# 5.7.22
+- Updated to Unity-2022.2.0a12
+
 # 4.30.22
 - Updated to Unity-2022.2.0a11
 
