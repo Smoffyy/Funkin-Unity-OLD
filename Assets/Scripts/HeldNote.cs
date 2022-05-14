@@ -6,8 +6,7 @@ public class HeldNote : MonoBehaviour
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
 
-    void Start()
-    {
+    void Start(){
 
     }
     void Update()
