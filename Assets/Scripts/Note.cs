@@ -3,12 +3,13 @@ using UnityEngine;
 public class Note : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    
     public bool canBePressed;
     public KeyCode keyToPress;
     public KeyCode altKeyToPress;
 
-    void Start()
-    {
+    void Start() {
+
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update()
