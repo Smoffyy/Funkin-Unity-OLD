@@ -19,14 +19,12 @@ public class OppNote : MonoBehaviour
         if (other.tag == "ActiveOp")
         {
             canBePressed = true;
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if (gameObject.activeSelf)
-        {
-            canBePressed = false;
-        }
+        gameObject.SetActive(false);
+
     }
 }

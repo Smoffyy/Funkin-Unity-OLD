@@ -4,7 +4,7 @@ using UnityEngine;
 public class FPSDisplay : MonoBehaviour
 {
     public TextMeshProUGUI FpsText;
-    private float frequency = 0.5f;
+    private float frequency = 0.5f; // Update frequency
     private float time;
     private int frameCount;
 
@@ -15,7 +15,7 @@ public class FPSDisplay : MonoBehaviour
         if (time >= frequency)
         {
             int frameRate = Mathf.RoundToInt(frameCount / time);
-            FpsText.text = frameRate.ToString() + " FPS";
+            FpsText.text = frameRate.ToString() + " FPS"; // FPS text
             time -= frequency;
             frameCount = 0;
         }
