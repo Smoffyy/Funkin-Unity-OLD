@@ -5,16 +5,20 @@ using UnityEngine;
 public class NoteHitAnim : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    private Animator anim;
+
+    //public AnimationClip hitAnimation;
+    //public AnimationClip idleAnimation;
+
     public Sprite hitAnim;
     public Sprite idleAnim;
-    private Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +29,7 @@ public class NoteHitAnim : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) { // On collide with the collider
         spriteRenderer.sprite = hitAnim; // Hit anim
+        //anim.Play("hitAnimation");
     }
 
     void OnTriggerExit2D(Collider2D other) {
@@ -32,6 +37,7 @@ public class NoteHitAnim : MonoBehaviour
         //new WaitForSeconds(3);
         //yield return new WaitForSeconds(3);
         spriteRenderer.sprite = idleAnim; // Hit anim
+        //anim.Play("idleAnimation");
     }
 
 }

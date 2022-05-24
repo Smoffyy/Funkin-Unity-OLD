@@ -5,7 +5,6 @@ public class Controller : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite defaultSprite;
     public Sprite pressedSprite;
-    public Sprite hitSprite;
     public KeyCode keyBind;
     public KeyCode altKeyBind;
     public static Controller instance;
