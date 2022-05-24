@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class OppNote : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
     public bool canBePressed;
+    public Sprite invisibleSprite;
     //public static OppNote instance;
     
 
     void Start()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -19,12 +21,13 @@ public class OppNote : MonoBehaviour
         if (other.tag == "ActiveOp")
         {
             canBePressed = true;
+            spriteRenderer.sprite = invisibleSprite;
             //gameObject.SetActive(false);
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        gameObject.SetActive(false);
-
+        spriteRenderer.sprite = invisibleSprite;
+        //gameObject.SetActive(false);
     }
 }

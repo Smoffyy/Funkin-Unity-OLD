@@ -7,12 +7,14 @@ public class NoteHitAnim : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite hitAnim;
     public Sprite idleAnim;
+    private Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class NoteHitAnim : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other) {
 
-        new WaitForSeconds(1);
+        //new WaitForSeconds(3);
         //yield return new WaitForSeconds(3);
         spriteRenderer.sprite = idleAnim; // Hit anim
     }
