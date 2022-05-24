@@ -109987,7 +109987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c142dc72f419d045a337acb9878f5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 10
+  scrollSpeed: 15
   BPM: 0
 --- !u!4 &1824804016
 Transform:
