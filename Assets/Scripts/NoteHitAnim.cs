@@ -8,7 +8,7 @@ public class NoteHitAnim : MonoBehaviour
     private Animator anim;
 
     //public AnimationClip hitAnimation;
-    //public AnimationClip idleAnimation;
+    
 
     public Sprite hitAnim;
     public Sprite idleAnim;
@@ -28,16 +28,14 @@ public class NoteHitAnim : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) { // On collide with the collider
+    
         spriteRenderer.sprite = hitAnim; // Hit anim
         //anim.Play("hitAnimation");
     }
 
     void OnTriggerExit2D(Collider2D other) {
 
-        //new WaitForSeconds(3);
-        //yield return new WaitForSeconds(3);
         spriteRenderer.sprite = idleAnim; // Hit anim
-        //anim.Play("idleAnimation");
     }
 
 }
