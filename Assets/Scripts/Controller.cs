@@ -5,6 +5,7 @@ public class Controller : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite defaultSprite;
     public Sprite pressedSprite;
+    public Sprite hitSprite;
     public KeyCode keyBind;
     public KeyCode altKeyBind;
     public static Controller instance;
@@ -38,7 +39,7 @@ public class Controller : MonoBehaviour
     }
 
     public void daNoteHit()
-    {   /*
+    {   
         if (!Input.GetKeyDown(keyBind))
         {
               spriteRenderer.sprite = hitSprite;
@@ -49,6 +50,16 @@ public class Controller : MonoBehaviour
               spriteRenderer.sprite = hitSprite;
         }
 
+        if (!Input.GetKeyUp(keyBind))
+        {
+            spriteRenderer.sprite = defaultSprite;
+        }
+
+        if (!Input.GetKeyUp(altKeyBind))
+        {
+            spriteRenderer.sprite = defaultSprite;
+        }
+
         if (!Input.GetKey("1"))
         {
             spriteRenderer.sprite = hitSprite;
@@ -56,7 +67,6 @@ public class Controller : MonoBehaviour
         {
             spriteRenderer.sprite = defaultSprite;
         }
-        */
     }
     public void daNoteMiss()
     {

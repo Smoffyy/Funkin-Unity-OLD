@@ -1,3 +1,8 @@
+# 6.25.22
+- Updated to Unity-2022.0a17
+- Added configurable FPSCap
+- Disabled the note hit anim cause kinda boring
+
 # 5.14.22
 - Updated to Unity-2022.2.0a13
 - Almost summer!!!!

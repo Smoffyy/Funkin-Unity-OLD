@@ -5,7 +5,7 @@ public class GameState : MonoBehaviour
     //public AudioSource Instrumental;
     //public AudioSource Vocals;
     public static GameState instance;
-    public float FPSCap = 61;
+    public float FPSCap = 60;
     void Start()
     {
         //Instrumental.Play();
