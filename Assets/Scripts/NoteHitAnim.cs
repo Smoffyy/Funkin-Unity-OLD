@@ -8,11 +8,9 @@ public class NoteHitAnim : MonoBehaviour
     private Animator anim;
 
     //public AnimationClip hitAnimation;
-    
 
     public Sprite hitAnim;
     public Sprite idleAnim;
-
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +27,13 @@ public class NoteHitAnim : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) { // On collide with the collider
     
-        spriteRenderer.sprite = hitAnim; // Hit anim
+        //spriteRenderer.sprite = hitAnim; // Hit anim
         //anim.Play("hitAnimation");
     }
 
     void OnTriggerExit2D(Collider2D other) {
 
-        spriteRenderer.sprite = idleAnim; // Hit anim
+        //spriteRenderer.sprite = idleAnim; // Hit anim
     }
 
 }
